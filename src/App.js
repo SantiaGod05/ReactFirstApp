@@ -6,7 +6,7 @@ function App() {
     return (
         <>
         <NavBar/>
-        <ItemListContainer greeting={"Hola!"} className="text-xl font-bold"/>
+        <ItemListContainer greeting={"Hello world!"} className="text-xl font-bold"/>
         </>
 );
 }
