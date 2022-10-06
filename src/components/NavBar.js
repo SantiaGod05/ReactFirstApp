@@ -1,10 +1,14 @@
+import { Link, NavLink } from "react-router-dom"
 const NavBar = () => {
     return (
 <div class="navbar bg-base-100">
     <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Heinsenberg's</a>
+        <Link class="btn btn-ghost normal-case text-xl" to="/">Heinsenberg's</Link>
     </div>
     <div class="flex-none">
+        <div>
+            <Link to="/Catalogue" >Catologue</Link>
+        </div>
         <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost btn-circle">
                 <div class="indicator">
@@ -14,10 +18,10 @@ const NavBar = () => {
             </label>
             <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
                     <div class="card-body">
-                    <span class="font-bold text-lg">8 Items</span>
-                    <span class="text-info">Subtotal: $999</span>
+                    <span class="font-bold text-lg">0 Items</span>
+                    <span class="text-info">Subtotal: $0</span>
                     <div class="card-actions">
-                        <button class="btn btn-primary btn-block">View cart</button>
+                        <Link class="btn btn-primary btn-block" to="/Cart" >View cart</Link>
                     </div>
                 </div>
             </div>
@@ -25,7 +29,7 @@ const NavBar = () => {
         <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                 <div class="w-10 rounded-full">
-                    <img src="https://placeimg.com/80/80/people" />
+                    <img src="https://indiehoy.com/wp-content/uploads/2020/09/breaking-bad-1.jpg" />
                 </div>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
