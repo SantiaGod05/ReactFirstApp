@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* Mis Estilos */
+
+::-webkit-scrollbar{
+  display: none;
+}
