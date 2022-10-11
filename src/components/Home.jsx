@@ -5,7 +5,7 @@ const Home = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hi friend!</h1>
+                    <h1 className="mb-5 text-5xl font-bold">Hi!</h1>
                     <p className="mb-5">Welcome to our adventure, we are Jesse and Walt.</p>
                     <Link to="/Products" className="btn btn-primary">Check our products</Link>
                 </div>
