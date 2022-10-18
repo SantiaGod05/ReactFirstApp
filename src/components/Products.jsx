@@ -1,6 +1,7 @@
 import ProductCard from "./ProductCard"
 import {collection, getDocs, getFirestore, } from "firebase/firestore"
 import { useEffect, useState } from "react"
+import  ProductCard from "./ProductCard";
 
 const Products = () => {
     const [items, setItems] = useState([])
@@ -28,9 +29,7 @@ return (
             </div>
         </div>
         <div className="flex flex-row w-screen justify-around">
-
             {/* <ProductCard title='a' precio='26' img='./du' desc=''/> */}
-            
         </div>
     </div>
 )

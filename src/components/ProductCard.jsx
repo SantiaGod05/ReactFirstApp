@@ -1,4 +1,5 @@
-const ProductCard = (title, desc, precio, img, id) => {
+import React from 'react'
+const ProductCard = ({title, desc, precio, img, id}) => {
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl mx-2" id={id} >
         <figure><img src={img} /></figure>
@@ -13,4 +14,5 @@ const ProductCard = (title, desc, precio, img, id) => {
     </div>
   )
 }
+
 export default ProductCard
