@@ -1,3 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.cols-2{
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .App {
   text-align: center;
 }
